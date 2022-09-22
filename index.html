@@ -19,10 +19,16 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <h1 class="text-center text-white">tic tac toe</h1>
+            <div id="playersName"></div>
             <div class="col-md-8 mt-4 d-flex justify-content-lg-center">
+                <div class="" id="player">
+                    <input type="text" id="player1">
+                    <input type="text" id="player2">
+                    <button onclick="player()" id="subm">submit</button>
+                </div>
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-center p-2 rounded-3 gap-2">
-                        <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item1" onclick="game(this.id)"></span>
+                        <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item1" data="azzzedne" onclick="game(this.id)"></span>
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item2" onclick="game(this.id)"></span>
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item3" onclick="game(this.id)"></span>
                     </div>
@@ -35,6 +41,9 @@
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item7" onclick="game(this.id)"></span>
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item8" onclick="game(this.id)"></span>
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item9" onclick="game(this.id)"></span>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                        <button class="btn btn-outline-light" onclick="reload()">reset</button>
                     </div>
                 </div>
             </div>
