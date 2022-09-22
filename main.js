@@ -19,8 +19,10 @@ function player() {
 
     localStorage.setItem('player1', player1.value);
     localStorage.setItem('player2', player2.value);
-    document.getElementById("player").style.display = "none"
+    document.getElementById("subm").style.display = "none";
     playersName.innerHTML = (localStorage.getItem("player1") + "X");
+    player1.disabled = true;
+    player2.disabled = true;
 
 }
 

@@ -17,18 +17,22 @@
 
 <body class="bg-info">
     <div class="container">
+        <h1 class="text-center text-white">tic tac toe</h1>
+
+        <div class="row" id="player">
+            <div class="d-flex justify-content-around">
+                <input type="text" placeholder="player 1" class="form-control w-25" id="player1">
+                <h2>vs</h2>
+                <input type="text" placeholder="player 2" class="form-control w-25" id="player2">
+            </div>
+            <button onclick="player()" class="btn btn-outline-light w-25 mx-auto mt-3" id="subm">submit</button>
+            <h2 class="text-center text-dark" id="playersName"></h2>
+        </div>
         <div class="row d-flex justify-content-center">
-            <h1 class="text-center text-white">tic tac toe</h1>
-            <div id="playersName"></div>
             <div class="col-md-8 mt-4 d-flex justify-content-lg-center">
-                <div class="" id="player">
-                    <input type="text" id="player1">
-                    <input type="text" id="player2">
-                    <button onclick="player()" id="subm">submit</button>
-                </div>
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-center p-2 rounded-3 gap-2">
-                        <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item1" data="azzzedne" onclick="game(this.id)"></span>
+                        <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item1" onclick="game(this.id)"></span>
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item2" onclick="game(this.id)"></span>
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item3" onclick="game(this.id)"></span>
                     </div>
@@ -43,7 +47,7 @@
                         <span class="btn btn-outline-light rounded-3 fw-bolder fs-1" id="item9" onclick="game(this.id)"></span>
                     </div>
                     <div class="col-md-12 d-flex justify-content-center mt-3">
-                        <button class="btn btn-outline-light" onclick="reload()">reset</button>
+                        <button class="btn btn-outline-light" onclick="reload()">Rejoue</button>
                     </div>
                 </div>
             </div>
